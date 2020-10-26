@@ -1,0 +1,17 @@
+<svg width="115" height="104" viewBox="0 0 115 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="115" height="104">
+<rect width="115" height="104" rx="3" fill="#FBDA57"/>
+</mask>
+<g mask="url(#mask0)">
+<rect opacity="0.12" width="115" height="104" rx="3" fill="#FBDA57"/>
+<g opacity="0.5">
+<rect opacity="0.3" x="97.4072" y="7.0755" width="79.3652" height="141.577" rx="20" fill="#FBDA57"/>
+<rect opacity="0.1" x="79.2572" y="-15.6339" width="79.3652" height="141.577" rx="20" fill="#FBDA57"/>
+<rect opacity="0.2" x="51.2391" y="34.778" width="79.3652" height="141.577" rx="20" fill="#FBDA57"/>
+<rect opacity="0.3" x="66.8926" y="53.3281" width="79.3652" height="141.577" rx="20" fill="#FBDA57"/>
+</g>
+</g>
+<path opacity="0.3" d="M72.5 38.375H42.5C40.4289 38.375 38.75 40.0539 38.75 42.125V60.875C38.75 62.9461 40.4289 64.625 42.5 64.625H72.5C74.5711 64.625 76.25 62.9461 76.25 60.875V42.125C76.25 40.0539 74.5711 38.375 72.5 38.375Z" fill="#FBDA57"/>
+<path d="M76.25 44H38.75V49.625H76.25V44Z" fill="#FBDA57"/>
+<path opacity="0.3" d="M70.625 55.25H66.875C65.8395 55.25 65 56.0895 65 57.125C65 58.1605 65.8395 59 66.875 59H70.625C71.6605 59 72.5 58.1605 72.5 57.125C72.5 56.0895 71.6605 55.25 70.625 55.25Z" fill="#FBDA57"/>
+</svg>

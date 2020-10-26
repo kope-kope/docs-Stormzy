@@ -1,0 +1,18 @@
+<svg width="115" height="104" viewBox="0 0 250 251" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="249" height="249" rx="9.5" fill="#DBDBDB" fill-opacity="0.15" stroke="#DBDBDB"/>
+<g opacity="0.75">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="24" width="250" height="227">
+<rect y="24" width="250" height="226.087" rx="10" fill="#FBDA57"/>
+</mask>
+<g mask="url(#mask0)">
+<g opacity="0.5">
+<rect opacity="0.3" x="211.755" y="39.3823" width="172.533" height="307.776" rx="10" fill="#FBDA57"/>
+<rect opacity="0.1" x="172.299" y="-9.98633" width="172.533" height="307.776" rx="10" fill="#FBDA57"/>
+<rect opacity="0.2" x="111.39" y="99.6045" width="172.533" height="307.776" rx="10" fill="#FBDA57"/>
+<rect opacity="0.3" x="145.419" y="139.931" width="172.533" height="307.776" rx="10" fill="#FBDA57"/>
+</g>
+</g>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M136.884 112.5L140.742 125H109.258L113.117 112.5H136.884ZM133.025 100H116.975L119.605 91.4813C120.335 89.1144 122.523 87.5 125 87.5C127.477 87.5 129.665 89.1144 130.396 91.4813L133.025 100ZM144.6 137.5L149.745 154.167H100.255L105.4 137.5H144.6Z" fill="#FF7276"/>
+<path opacity="0.3" d="M158.333 158.333H91.6667C89.3655 158.333 87.5 160.199 87.5 162.5C87.5 164.801 89.3655 166.667 91.6667 166.667H158.333C160.635 166.667 162.5 164.801 162.5 162.5C162.5 160.199 160.635 158.333 158.333 158.333Z" fill="#FF7276"/>
+</svg>

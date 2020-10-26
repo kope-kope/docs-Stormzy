@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="icon"
+      href="./icons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="./icons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Gamma Demo</title>
+    <style>
+      body {
+        background-image: url(Frame.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body style="height: 100vh; display: flex">
+    <main class="m-auto">
+      <div class="container-md" style="width: 600px; max-width: 80%">
+        <div class="row">
+          <div class="col">
+            <div class="card card-bleed shadow-light-lg mb-6">
+              <div class="card-header">
+                <div class="row">
+                  <div class="col-auto">
+                    <img src="logo.png" />
+                  </div>
+                  <div class="col">
+                    <h3 class="text-dark m-0">
+                      <strong
+                        >Payment <br />
+                        Demo</strong
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <img src="line.png" />
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    class="form-control"
+                    placeholder="you@email.com"
+                    type="email"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="amount">Amount</label>
+                  <input
+                    class="form-control"
+                    placeholder="50"
+                    type="amount"
+                    id="amount"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="full-name">Full Name</label>
+                  <input
+                    class="form-control"
+                    placeholder="Adetayo Chukwu"
+                    type="text"
+                    id="fullName"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="first-name">Phone Number</label>
+                  <input
+                    class="form-control"
+                    placeholder="0808080"
+                    type="text"
+                    id="phoneNumber"
+                  />
+                </div>
+                <input type="hidden" id="callback" />
+                <div class="text-center">
+                  <pay-with-woven
+                    id="pay-with-gamma"
+                    theme="black"
+                    onclick="callGamma()"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://js.woven.finance"></script>
+    <script>
+      function callGamma() {
+        var gamma = Gamma.setup({
+          key: "vb_lk_d94c8a03f05cdd9548a21052",
+          email: document.getElementById("email").value,
+          amount: parseInt(document.getElementById("amount").value) * 100,
+          customer_name: document.getElementById("fullName").value,
+          mobile_number: document.getElementById("phoneNumber").value,
+          ref: "WAPIC0001",
+          callback: function (ref) {
+            console.log(ref)
+            alert("Payment successful. Give value here...");
+          },
+          onClose: function () {
+            console.log("Gamma pop closed");
+          },
+        });
+        gamma.pop();
+      }
+    </script>
+  </body>
+</html>
