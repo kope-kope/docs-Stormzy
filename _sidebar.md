@@ -10,13 +10,11 @@
   * ![Home Logo](assets/img/home.svg) [Home](README.md)
      * [Overview](README.md#overview)
      * [Authorization](README.md#Authorization)
-  * ![Au]
   * ![Accept Logo](/assets/img/card.svg) [Investor Management](accept_payments.md)
     * [Create Investor](create_investor.md#overview)
     * [Update Investor](update_investor.md)
     * [Upload KYC](upload_kyc.md)
     * [Change Investor Status](change_investor_status.md)
-
     * [Get Investors](get_investors.md)
     * [Get Investor by Id](get_investor_by_id.md)
     * [Get Investors Account Balances](get_investor_balance.md)
@@ -32,7 +30,7 @@
     * [Create Transaction](create_transaction.md)
     * [Get Transactions](get_transactions.md)
     * [Get Transactions by Date](get_transactions.md#Date)
-    * [Get Transactions by Transaction Reference](get_transactions.md#Transaction_Reference)
+    * [Get Transactions by TransactionReference](get_transactions.md#Transaction_Reference)
 
 
   <!-- * ![Business Logo](/assets/img/business.svg) [Business Operations](business.md)
