@@ -9,9 +9,9 @@ The Stormgarden API allows you (has a Stormgarden partner) to programmatically o
 [Register as a partner](http://console.staging.storm.trium.ng/settings/api). You will be provided with test API and Secret keys, that you can use to make API calls
 
 # Example Requests
-We give sample API calls close to every endpoint using cURL. You simply have to insert  your specific values, and you can test the calls from the command line. You can (read this article)[https://linuxize.com/post/curl-rest-api/] to learn how to use cURL with APIs.
+We give sample API calls close to every endpoint using cURL. You simply have to insert  your specific values, and you can test the calls from the command line. You can [read this article](https://linuxize.com/post/curl-rest-api/) to learn how to use cURL with APIs.
 
-Not familiar with cURL? You can use (Postman)[https://www.postman.com/downloads/]. Postman is a collaboration environment for API development including making HTTP requests. Run the (Stormgarden APIs Collection)[https://documenter.getpostman.com/view/11930516/TVYF6xeD] in Postman to make testing quicker and easier.
+Not familiar with cURL? You can use [Postman](https://www.postman.com/downloads/). Postman is a collaboration environment for API development including making HTTP requests. Run the [Stormgarden APIs Collection](https://documenter.getpostman.com/view/11930516/TVYF6xeD) in Postman to make testing quicker and easier.
 
 # Requests and Responses
 The request and response bodies are formatted in JSON. The Content-type for all responses is set to `application/json`. 
@@ -29,11 +29,18 @@ Successful and Error responses are in the following formats:
 #### ** Error **
 
 ```JSON
-
+{
+    "status": [integer],
+    "errors": [array]
+}
 ```
 <!-- tabs:end -->
 
+The status key contains the HTTP status code in order to determine the result of an API call, if it was successful call. Typicall, `2xx` indicates that a request was successful.
 
+The data key has the result of a request. Its data type is an object (or an array) depending on the request made. A request to GET an investor's details returns an object in the data key, while a request to GET an investor's portfolio returns an array in the data key.
+
+The error key contains the description of the error(s) with the request made.
 
 
 1. You need valid [API and secret keys](#authorization), to send requests to the API endpoints. You can get your key from the settings menu on your [dashboard](http://console.staging.storm.trium.ng/settings/api)
